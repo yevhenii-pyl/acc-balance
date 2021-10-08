@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       width: "100%",
       justifyContent: "space-around",
       fontWeight: "bold",
+      color: theme.palette.grey[600],
       "& li": {
         cursor: "pointer",
         padding: theme.spacing(1),
@@ -23,6 +24,13 @@ const useStyles = makeStyles((theme: Theme) => ({
         "&:hover": {
           color: theme.palette.grey[400],
           backgroundColor: theme.palette.primary.main,
+        },
+        "&.disabled": {
+          cursor: "default",
+          color: theme.palette.grey[600],
+        },
+        "&.selected": {
+          color: theme.palette.grey[200],
         },
       },
     },

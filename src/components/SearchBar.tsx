@@ -12,6 +12,7 @@ import {
   makeStyles,
   Typography,
   InputAdornment,
+  CircularProgress,
 } from "@material-ui/core";
 
 import { validateKey } from "../utils";
@@ -104,7 +105,7 @@ function SearchBar({ addAccount }) {
             onClick={handleAccountAdding}
             disabled={inputError.length > 0 || submitting || pkh.length === 0}
           >
-            Add
+            {submitting ? <CircularProgress size="1em" /> : "Add"}
           </Button>
         </Grid>
         {inputError.length > 0 && (
