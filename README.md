@@ -4,4 +4,4 @@
 ######  Used Material UI for styling.
 ######  Used redux-persist in order to save state to local store. 
 ######  Added react-paginate for simple pagination. 
-######  App mostly consider happy cases and desctop/tablet devices. 
+######  App mostly consider happy cases and desktop/tablet devices. 
